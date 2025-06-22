@@ -1,0 +1,70 @@
+---
+import { siteConfig } from '@/site-config'
+import BaseLayout from '@/layouts/BaseLayout'
+import TitlePage from '@/components/TitlePage'
+---
+
+<BaseLayout title='Terms and Conditions'>
+	<TitlePage title='Terms and Conditions' />
+	<div class='prose prose-lg dark:prose-invert mx-auto'>
+		<p><strong>Last updated:</strong> June 22, 2025</p>
+		<p>
+			Welcome to {siteConfig.title} ("we", "our", or "us"). By accessing or using our website at {
+				siteConfig.site
+			} (the “Site”), you agree to be bound by the following Terms and Conditions. If you do not agree
+			with any part of these terms, please do not use this site.
+		</p>
+
+		<h2>1. Use of Content</h2>
+		<p>
+			All content on this site is provided for general informational purposes only. We make no
+			warranties regarding the accuracy, completeness, or usefulness of any content.
+		</p>
+		<p>
+			You are welcome to read, share, or link to our content, but you may not copy, reproduce, or
+			redistribute it for commercial purposes without our written permission.
+		</p>
+
+		<h2>2. Newsletter Subscription</h2>
+		<p>
+			If you choose to subscribe to our newsletter, you agree to receive periodic emails from us.
+			You can unsubscribe at any time using the link provided in our emails.
+		</p>
+		<p>We will not sell or share your email address with third parties.</p>
+
+		<h2>3. Intellectual Property</h2>
+		<p>
+			All content, including text, images, logos, and graphics, is the intellectual property of {
+				siteConfig.title
+			} or its content providers unless otherwise stated. Unauthorized use is prohibited.
+		</p>
+
+		<h2>4. Third-Party Links</h2>
+		<p>
+			Our website may contain links to third-party websites or services. We are not responsible for
+			the content, privacy practices, or accuracy of those external sites.
+		</p>
+
+		<h2>5. Limitation of Liability</h2>
+		<p>
+			We are not liable for any damages or losses resulting from your use of, or inability to use,
+			the content on this site. All use is at your own risk.
+		</p>
+
+		<h2>6. Changes to These Terms</h2>
+		<p>
+			We may update these Terms and Conditions from time to time. By continuing to use the site
+			after changes are posted, you accept the revised terms.
+		</p>
+
+		<h2>7. Governing Law</h2>
+		<p>
+			These terms are governed by the laws of [Your Country/State], without regard to its conflict
+			of law principles.
+		</p>
+
+		<h2>8. Contact Us</h2>
+		<p>If you have any questions about these Terms, please contact us at:</p>
+		<p>[youremail@example.com]</p>
+	</div>
+</BaseLayout>

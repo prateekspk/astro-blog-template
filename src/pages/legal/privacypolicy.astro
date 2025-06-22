@@ -1,0 +1,76 @@
+---
+import { siteConfig } from '@/site-config'
+import BaseLayout from '@/layouts/BaseLayout'
+import TitlePage from '@/components/TitlePage'
+---
+
+<BaseLayout title='Privacy Policy'>
+	<TitlePage title='Privacy Policy' />
+	<div class='prose prose-lg dark:prose-invert mx-auto'>
+		<p><strong>Last updated:</strong> June 22, 2025</p>
+		<p>
+			Welcome to {siteConfig.title} ("we", "our", or "us"). Your privacy is important to us. This Privacy
+			Policy outlines how we handle your information when you visit our website at {
+				siteConfig.site
+			}.
+		</p>
+
+		<h2>1. Information We Collect</h2>
+		<p>We collect email addresses only if you voluntarily subscribe to our newsletter.</p>
+		<p>
+			We use this information solely to send you blog updates, announcements, or occasional news
+			related to this site.
+		</p>
+		<p>We do not collect any other personal data.</p>
+
+		<h2>2. How We Use Your Email Address</h2>
+		<ul>
+			<li>To send you the newsletter you signed up for</li>
+			<li>To communicate occasional important updates about the blog</li>
+		</ul>
+		<p>We will never share, sell, or rent your email address to third parties.</p>
+		<p>You can unsubscribe at any time using the "unsubscribe" link in our emails.</p>
+
+		<h2>3. Cookies</h2>
+		<p>We do not use cookies for tracking or advertising.</p>
+		<p>
+			However, embedded content from third-party sites (e.g., YouTube, Reddit) may set their own
+			cookies. We have no control over these third-party cookies.
+		</p>
+
+		<h2>4. Email Marketing Service</h2>
+		<p>
+			We may use a third-party email delivery service (like Mailchimp, Buttondown, or ConvertKit) to
+			send our newsletters. These services may store your email address in accordance with their own
+			privacy policies.
+		</p>
+
+		<h2>5. External Links</h2>
+		<p>
+			Our site may contain links to external websites. We are not responsible for the privacy
+			practices of those websites.
+		</p>
+
+		<h2>6. Data Retention</h2>
+		<p>
+			We retain your email address only as long as you are subscribed to the newsletter. You can
+			unsubscribe at any time.
+		</p>
+
+		<h2>7. Your Rights</h2>
+		<p>
+			Depending on your location, you may have rights to access, correct, or delete your personal
+			data. To make such a request, contact us at [youremail@example.com].
+		</p>
+
+		<h2>8. Changes to This Privacy Policy</h2>
+		<p>
+			We may update this Privacy Policy from time to time. The "Last updated" date at the top of
+			this page will be revised accordingly.
+		</p>
+
+		<h2>9. Contact</h2>
+		<p>If you have any questions or concerns, please reach out to us at:</p>
+		<p>[youremail@example.com]</p>
+	</div>
+</BaseLayout>

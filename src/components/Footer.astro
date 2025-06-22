@@ -4,7 +4,42 @@ import { siteConfig } from '@/site-config'
 const today = new Date()
 ---
 
-<footer class='flex justify-center items-center w-full px-16 h-28 border-t-2'>
-	&copy; {today.getFullYear()}
-	{siteConfig.author}. All rights reserved.
+<footer class='flex flex-col justify-center items-center w-full px-4 sm:px-8 py-8 border-t-2'>
+	<div class='flex flex-wrap justify-around gap-8 mb-6 w-full max-w-6xl'>
+		<div class='w-full sm:w-auto text-center sm:text-left'>
+			<h3 class='font-bold mb-2'>Quick Links</h3>
+			<ul class='space-y-2'>
+				<li><a href='/legal/about' class='hover:underline'>About</a></li>
+				<li><a href='/legal/contact' class='hover:underline'>Contact</a></li>
+				<li><a href='/legal/privacypolicy' class='hover:underline'>Privacy Policy</a></li>
+				<li><a href='/legal/terms' class='hover:underline'>Terms & Conditions</a></li>
+			</ul>
+		</div>
+		<div class='w-full sm:w-auto text-center sm:text-left'>
+			<h3 class='font-bold mb-2'>Follow Us</h3>
+			<ul class='space-y-2'>
+				<li>
+					<a href='https://instagram.com' target='_blank' class='hover:underline'>Instagram</a>
+				</li>
+				<li><a href='https://twitter.com' target='_blank' class='hover:underline'>Twitter</a></li>
+			</ul>
+		</div>
+		<div class='w-full sm:w-auto text-center sm:text-left'>
+			<h3 class='font-bold mb-2'>Subscribe</h3>
+			<form class='flex flex-col gap-2 items-center sm:items-start'>
+				<input
+					type='email'
+					placeholder='Enter your email'
+					class='border px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-auto'
+				/>
+				<button type='submit' class='bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600'>
+					Subscribe
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class='text-center mt-4'>
+		&copy; {today.getFullYear()}
+		{siteConfig.author}. All rights reserved.
+	</div>
 </footer>

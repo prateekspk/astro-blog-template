@@ -1,0 +1,23 @@
+---
+import { siteConfig } from '@/site-config'
+import BaseLayout from '@/layouts/BaseLayout'
+import TitlePage from '@/components/TitlePage'
+---
+
+<BaseLayout title='Contact Us'>
+	<TitlePage title='Contact Us' />
+	<div class='prose prose-lg dark:prose-invert mx-auto mt-10'>
+		<p>We’d love to hear from you!</p>
+		<p>
+			If you have any questions, feedback, or suggestions related to the blog, feel free to reach
+			out via email.
+		</p>
+		<p>📧 Email: <a href='mailto:youremail@example.com'>youremail@example.com</a></p>
+		<p>We try our best to respond within a few days.</p>
+		<p>
+			Please note that we do not offer support for third-party products or services mentioned on the
+			blog.
+		</p>
+		<p>Thank you for visiting {siteConfig.title}!</p>
+	</div>
+</BaseLayout>

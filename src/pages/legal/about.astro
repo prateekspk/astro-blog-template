@@ -1,0 +1,24 @@
+---
+import { siteConfig } from '@/site-config'
+import BaseLayout from '@/layouts/BaseLayout'
+import TitlePage from '@/components/TitlePage'
+---
+
+<BaseLayout title='About Us'>
+	<TitlePage title='About Us' />
+	<div class='prose prose-lg dark:prose-invert mx-auto'>
+		<p>
+			Welcome to {siteConfig.title}, your go-to source for the latest updates, trends, and insights
+			in the world of technology.
+		</p>
+		<p>
+			Our mission is to provide accurate, timely, and engaging content to keep you informed about
+			the ever-evolving tech landscape.
+		</p>
+		<p>
+			Whether you're a tech enthusiast, a professional, or just curious about the latest
+			innovations, we aim to deliver content that caters to your interests.
+		</p>
+		<p>Thank you for visiting {siteConfig.title}. We hope you enjoy exploring our blog!</p>
+	</div>
+</BaseLayout>
